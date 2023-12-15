@@ -23,7 +23,7 @@ ffbuild_dockerbuild() {
         -Denable_tests=false
         -Denable_docs=false
         -Denable_avx512=true
-        -Denable_float=true
+        -Denable_float=false
     )
 
     if [[ $TARGET == win* || $TARGET == linux* ]]; then
